@@ -1,0 +1,37 @@
+.tip-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 85%;
+    align-items: flex-start;
+  }
+  
+  .writing {
+    align-items: flex-start;
+  }
+  
+  .input-container-tip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+    padding: 5px; /* Reduce padding to narrow the height */
+    width: 100%;
+  }
+  
+  .unit,
+  .amount {
+    display: flex;
+    align-items: center;
+    padding: 5px; /* Reduce padding to narrow the height */
+    font-size: 12px; /* Adjust font size to make the text smaller */
+  }
+  
+  
+  .unit {
+    align-items: start;
+  }
+
+  .amount {
+    align-items: end;
+  }

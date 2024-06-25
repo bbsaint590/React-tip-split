@@ -1,0 +1,44 @@
+#root {
+}
+
+.main-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5e4e7;
+}
+
+.head-cont {
+  margin-bottom: 20px;
+}
+
+.main-box {
+  display: flex;
+  align-items: stretch;
+  border-radius: 10px;
+  background-color: #ffffff;
+  max-width: 2000px;
+  max-height: max-content;
+}
+
+.right, .left {
+  flex: 1;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+/* .top-section {
+  display: flex;
+  flex-direction: column; */
+
+} */
+
+.middle-section {
+  margin: 10px 0;
+}
+.middle-section2 {
+  margin: 10px 0;
+}
