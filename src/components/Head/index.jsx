@@ -1,11 +1,12 @@
-import './style.css'
+import './style.css';
 
 const Heading = () => {
-    return (
-        <div className="heading">
-         <h1>SPLI</h1>
-         <h1>TTER</h1>
-        </div>
-    )
+  return (
+    <div className="heading">
+      <h1>SPLI</h1>
+      <h1>TTER</h1>
+    </div>
+  );
 }
-    export default Heading
+
+export default Heading;

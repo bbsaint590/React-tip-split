@@ -1,29 +1,21 @@
-import "./style.css"
+import "./style.css";
 
-
-const Tip = ({title, unit, amount}) => {
-    return (
+const Tip = ({ title, unit, amount }) => {
+  return (
     <div className="tip-container">
-        <div className="writing">
-          <h4>{title}</h4>
-          
-        </div>
-        <div className="input-container-tip">
+      <div className="writing">
+        <h4>{title}</h4>
+      </div>
+      <div className="input-container-tip">
         <div className="unit">
-        <h5>{unit}</h5>
+          <h5>{unit}</h5>
         </div>
         <div className="amount">
-            {amount}
+          {amount}
         </div>
-        </div>
-        
+      </div>
     </div>
-    )
-  }
+  );
+}
 
-export default Tip
-
-{/* <div>
-          <label className="amount" htmlFor="amount">{input}</label>
-          <input className="amount" type="number" name="amount" />
-        </div> */}
+export default Tip;

@@ -1,44 +1,197 @@
-#root {
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
+/* Main Container */
 .main-cont {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #c5e4e7;
+  min-height: 100vh;
+  padding: 20px;
 }
 
+/* Heading Container */
 .head-cont {
   margin-bottom: 20px;
 }
 
+/* Main Box */
 .main-box {
   display: flex;
-  align-items: stretch;
+  flex-direction: row;
   border-radius: 10px;
   background-color: #ffffff;
-  max-width: 2000px;
-  max-height: max-content;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
 }
 
-.right, .left {
+.left, .right {
   flex: 1;
+  padding: 20px;
 }
 
 .left {
   margin-right: 10px;
+  margin-bottom: 110px;
 }
 
-/* .top-section {
+.right {
   display: flex;
-  flex-direction: column; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-} */
-
-.middle-section {
+/* Middle Sections */
+.middle-section, .middle-section2 {
+  display: flex;
+  justify-content: center;
   margin: 10px 0;
 }
-.middle-section2 {
-  margin: 10px 0;
+
+.middle-section2 input {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  width: calc(40% - 85px);
+  margin-left: 5px;
+}
+
+/* Input Styles */
+.amount-container {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 10px;
+  min-width: 100%;
+  max-width: 100%;
+  align-items: center;
+  background-color: #00474b;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.writing {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 5px solid black;
+  padding: 10px;
+}
+
+.button-reset {
+  background-color: #0d686d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-reset:hover {
+  background-color: #0a5054;
+}
+
+/* Button Styles */
+.PCbutton {
+  border-radius: 5px;
+  width: 75px;
+  height: 35px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.PCbutton:hover {
+  opacity: 0.9;
+}
+
+/* Tip Container */
+.tip-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  max-width: 100%;
+  align-items: flex-start;
+}
+
+.input-container-tip {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid black;
+  padding: 5px;
+  width: 100%;
+}
+
+.unit, .amount {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .main-cont {
+    padding: 10px;
+  }
+
+  .main-box {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left, .right {
+    padding: 10px;
+    margin-right: 0;
+  }
+
+  .middle-section, .middle-section2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .PCbutton {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .amount-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .input-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .button-reset {
+    width: 100%;
+  }
+
+  .middle-section2 input {
+    width: 100%;
+    margin: 5px 0;
+  }
 }
